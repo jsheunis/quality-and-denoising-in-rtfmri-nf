@@ -15,10 +15,17 @@
 
 %% Load article AND features (Data provided in github repo and OSF supplementary material)
 
-articles_json = 'Users/jsheunis/Documents/MATLAB/quality-and-denoising-in-rtfmri-nf/rtfMRI_methods_review_included_studies.json';
+articles_json = 'Users/jheunis/Documents/MATLAB/quality-and-denoising-in-rtfmri-nf/rtfMRI_methods_review_included_studies.json';
 articles = loadjson(articles_json);
-articles_features_txt = 'Users/jsheunis/Documents/MATLAB/quality-and-denoising-in-rtfmri-nf/rtfMRI_methods_review_included_studies_procsteps.txt';
+articles_features_txt = 'Users/jheunis/Documents/MATLAB/quality-and-denoising-in-rtfmri-nf/rtfMRI_methods_review_included_studies_procsteps.txt';
 articles_features = tdfread(articles_features_txt);
+articles_features_defaults_txt = 'Users/jheunis/Documents/MATLAB/quality-and-denoising-in-rtfmri-nf/rtfMRI_methods_review_included_studies_procsteps_DEFAULTS.txt';
+articles_features_defaults = tdfread(articles_features_defaults_txt);
+
+%% Select features to plot
+
+% features = articles_features;
+features = articles_features_defaults;
 
 %% Data wrangling to add features to articles
 
@@ -29,7 +36,7 @@ for i = 1:N_studies
     doi = lower(strtrim(articles{1,i}.DOI));
     
     for j = 1:N_studies
-        if strcmp(doi, lower(strtrim(articles_features.doi(j,:))))
+        if strcmp(doi, lower(strtrim(features.doi(j,:))))
             article_feature_mapping(i,2) = j;
         end
     end
@@ -38,11 +45,11 @@ for i = 1:N_studies
         disp(num2str(i))
     end
     
-    feature_fields = fieldnames(articles_features);
+    feature_fields = fieldnames(features);
     num_fields = length(feature_fields);
     for K = 1:num_fields
         this_field = feature_fields{K};
-        articles{1,i}.features.(this_field) = strtrim(articles_features.(this_field)(article_feature_mapping(i,2),:));
+        articles{1,i}.features.(this_field) = strtrim(features.(this_field)(article_feature_mapping(i,2),:));
     end
 end
 
