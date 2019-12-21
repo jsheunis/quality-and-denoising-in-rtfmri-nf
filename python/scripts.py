@@ -2,7 +2,7 @@ import webbrowser
 import pandas as pd
 import ipywidgets as widgets
 import qgrid
-from IPython.display import display
+from IPython.display import display, IFrame
 
 
 def show_table1(fn):
@@ -18,7 +18,7 @@ def show_table1(fn):
         for i in idx:
             url = 'https://www.doi.org/' + df_studies.iloc[i]['doi']
             webbrowser.open(url)
-    
+            
     btn2.on_click(btn2_eventhandler)
     return qgrid_widget
 

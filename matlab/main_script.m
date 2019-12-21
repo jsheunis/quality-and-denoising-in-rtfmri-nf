@@ -75,6 +75,11 @@ end
 %% Plot pie charts
 
 % --- RESPIRATORY CORRECTION ----
+% 'RT', 'RT + OFFLINE RETROICOR', 'RT + OFFLINE RETROICOR + OFFLINE CORR', ==> 'RT'
+% 'DNR', 'OFFLINE CORR', 'OFFLINE RETROICOR', 'MONITOR EXCLUSION' ==> 'DNR'
+% 'ROI DIFF', 'ROI DIFF + OFFLINE CORR', ==> 'ROI DIFF'
+% 'RT CORR +REG', ==> 'OTHER'
+% 'N', ==> 'N'
 resp = {'RT',...
 'DNR',...
 'ROI DIFF',...

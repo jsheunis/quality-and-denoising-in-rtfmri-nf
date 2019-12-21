@@ -13,3 +13,5 @@ dependencies:
     - qgrid
     - cufflinks
     - plotly==4.3.0
+    - numpy
+    - nbinteract
