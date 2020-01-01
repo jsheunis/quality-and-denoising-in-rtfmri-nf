@@ -12,5 +12,10 @@ The work investigated the state of denoising methods used in the field of fMRI n
 
 ### Explore the data from your browser:
 
-You don't have to install any software to explore the data. Just click on the following link and it will open the Jupyter notebook:
+You don't have to install any software to explore the data. Just click on the following link and it will open the interactive Jupyter notebook as a webpage:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jsheunis/quality-and-denoising-in-rtfmri-nf/master?urlpath=%2Fvoila%2Frender%2Fexplore_rtfmri_methods_web.ipynb)
+
+If you are a developer and would like to interact with the code as well, see this link:
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jsheunis/quality-and-denoising-in-rtfmri-nf/master)
