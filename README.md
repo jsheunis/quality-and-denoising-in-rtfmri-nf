@@ -17,7 +17,7 @@ You don't have to install any software to explore the data. This interactive das
 
 [![Dashboard](https://img.shields.io/badge/Dash-board-brightgreen)](https://rtfmri-methods.herokuapp.com/)
 
-The following Binder environment will allow you to interactive with the code, data, and visualizations in the form of a Jupyter notebook:
+The following Binder environment will allow you to interact with the code, data, and visualizations via a Jupyter notebook:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jsheunis/quality-and-denoising-in-rtfmri-nf/master)
 
