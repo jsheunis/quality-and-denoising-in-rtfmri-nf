@@ -1,6 +1,6 @@
 # Quality and denoising in real-time fMRI neurofeedback - a methods review
 
-This repository contains code and data related to the manuscript: [Quality and denoising in real-time fMRI neurofeedback - a methods review](https://osf.io/xubhq)
+This repository contains code and data related to the manuscript: [Quality and denoising in real-time fMRI neurofeedback - a methods review](https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25010) ([link to preprint](https://osf.io/xubhq))
 
 ### Summary of the manuscript
 The work investigated the state of denoising methods used in the field of fMRI neurofeedback. It specifically looked at the acquisition and processing tools that are available to researchers applying fMRI neurofeedback to help them improve the quality of the BOLD and neurofeedback signals. Furthermore, it investigated the reporting practices of a set of 128 recently published studies applying neurofeedback in both healthy and patient populations.
